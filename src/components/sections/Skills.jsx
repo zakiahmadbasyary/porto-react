@@ -5,7 +5,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
-        
+
         {/* SECTION LABEL */}
         <div className="font-mono text-xs text-[#10B981] tracking-widest uppercase mb-3">
           03 / SKILLS
@@ -14,7 +14,7 @@ export default function Skills() {
         {/* SECTION HEADING */}
         <div className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight">
-            Keahlian &amp; Perkakas Teknologi
+            Keahlian &amp;  Teknologi
           </h2>
           <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
             Bahasa pemrograman, framework, pustaka data, dan perangkat lunak yang saya gunakan dalam pengembangan produk.
