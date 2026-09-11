@@ -17,7 +17,7 @@ export default function About() {
           </div>
 
           <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-[#71717A]">
-            <span>SYS.INFO</span>
+            {/* <span>SYS.INFO</span> */}
             <span className="w-12 h-[1px] bg-[#27272A]" />
           </div>
         </div>
@@ -57,15 +57,12 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.15 }}
           >
             <p>
-              Saya adalah pengembang perangkat lunak dan analitis data berbasis latar belakang akademis Teknik Informatika Universitas Lampung. Pengalaman saya memadukan disiplin rekayasa web dengan analisis data yang kuat untuk menjembatani sistem backend, pemrosesan data, dan antarmuka pengguna yang responsif.
-            </p>
-
-            <p>
-              Baik dalam membangun aplikasi web interaktif, merancang alur pemrosesan data analitik, maupun mengimplementasikan model machine learning untuk visi komputer (YOLO/Mediapipe) dan NLP, saya sangat menghargai desain modular, performa terukur, serta kejelasan teknis di atas kerumitan yang berlebihan.
-            </p>
-
-            <p>
-              Di luar proyek utama, saya aktif mengkoordinasikan kegiatan Laboratorium Teknik Komputer Unila, memandu praktikum mahasiswa, serta bereksperimen dengan teknologi open-source dan otomasi alur kerja digital.
+            Experienced in data analysis, machine learning, and artificial intelligence to transform data into
+            insights that support decision-making. Experienced in managing end-to-end data analysis
+            workflows, ranging from data preprocessing, exploratory data analysis (EDA), visualization,
+            and dashboard development to the building and evaluation of machine learning models using
+            Python, SQL, Tableau, and various AI frameworks. Skilled at developing data-driven solutions
+            to address business and operational needs.
             </p>
           </motion.div>
 
@@ -149,7 +146,7 @@ export default function About() {
                 Full-Stack Dev &amp; Data Systems
               </div>
               <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
-                Web &amp; Machine Learning
+                Web &amp; Artificial Inteligence
               </div>
             </div>
           </motion.div>
@@ -172,10 +169,10 @@ export default function About() {
                 CURRENT STATUS
               </div>
               <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
-                Lab Coordinator &amp; Student
+                System Intern in GGP &amp; Freelance
               </div>
               <div className="text-xs text-[#10B981] mt-1 font-mono">
-                Available for Projects
+                Work and Projects Available
               </div>
             </div>
           </motion.div>

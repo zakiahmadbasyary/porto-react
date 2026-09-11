@@ -45,7 +45,7 @@ export default function Hero() {
 
             {/* MAIN HEADLINE */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight text-[#F5F5F5] leading-[1.15]">
-              Hi, saya <span className="text-[#10B981]">Zaki Ahmad Basyary</span>.
+              Hi, I'am <span className="text-[#10B981]">Zaki Ahmad Basyary</span>.
             </h1>
 
             {/* DYNAMIC ROLE */}
@@ -67,9 +67,7 @@ export default function Hero() {
 
             {/* DESCRIPTION */}
             <p className="mt-6 text-[#A1A1AA] text-base leading-relaxed max-w-xl">
-              Saya memiliki minat besar dalam membangun aplikasi web yang interaktif dan responsif,
-              serta mengolah data untuk menghasilkan insight bisnis yang bernilai.
-              Berfokus pada pemrosesan data, machine learning, dan pengembangan web modern.
+              I have a strong interest in building interactive and responsive web applications, as well as processing data to generate valuable business insights. My focus lies in data processing, machine learning, and modern web development.
             </p>
 
             {/* CTA BUTTONS */}
@@ -78,7 +76,7 @@ export default function Hero() {
                 href="#projects"
                 className="bg-[#F5F5F5] text-[#0A0A0A] hover:bg-[#E5E2E1] font-medium text-sm px-6 py-3 rounded transition-all flex items-center gap-2 group"
               >
-                <span>Lihat Portofolio</span>
+                <span>View Portfolio</span>
                 <span className="font-mono transition-transform group-hover:translate-x-1">→</span>
               </a>
 
@@ -88,7 +86,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="bg-[#171717] text-[#F5F5F5] hover:bg-[#1F1F23] border border-[#27272A] hover:border-[#3F3F46] font-medium text-sm px-6 py-3 rounded transition-all flex items-center gap-2"
               >
-                <span>Unduh CV</span>
+                <span>Download CV</span>
                 <span className="font-mono text-xs text-[#71717A]">↗</span>
               </a>
             </div>
