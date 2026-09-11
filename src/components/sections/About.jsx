@@ -5,69 +5,183 @@ export default function About() {
     <section id="about" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
-        {/* SECTION LABEL */}
-        <div className="font-mono text-xs text-[#10B981] tracking-widest uppercase mb-3">
-          01 / ABOUT
+        {/* HEADER ROW */}
+        <div className="flex items-center justify-between mb-8">
+          <div>
+            <div className="font-mono text-xs text-[#10B981] tracking-widest uppercase mb-2">
+              01 // ABOUT
+            </div>
+            <h2 className="text-3xl md:text-4xl font-semibold text-[#F5F5F5] tracking-tight">
+              About Me
+            </h2>
+          </div>
+
+          <div className="hidden sm:flex items-center gap-2 font-mono text-xs text-[#71717A]">
+            <span>SYS.INFO</span>
+            <span className="w-12 h-[1px] bg-[#27272A]" />
+          </div>
         </div>
 
-        {/* SECTION TITLE */}
-        <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight mb-10">
-          Tentang Saya
-        </h2>
-
-        {/* EDITORIAL 2-COLUMN GRID */}
-        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-start">
+        {/* 2-COLUMN MAIN CONTENT GRID */}
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-start mb-12">
           
-          {/* LEFT: LARGE STATEMENT */}
+          {/* LEFT COLUMN: LARGE STATEMENT & CURRENT FOCUS */}
           <motion.div
-            className="md:col-span-6"
+            className="md:col-span-5 space-y-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xl md:text-2xl font-medium text-[#F5F5F5] leading-snug border-l-2 border-[#10B981] pl-5 py-1">
-              &ldquo;Mengolah data mentah dan ide produk abstrak menjadi aplikasi digital yang tangguh, presisi, dan bermanfaat.&rdquo;
-            </p>
+            <h3 className="text-2xl sm:text-3xl font-semibold text-[#F5F5F5] leading-tight">
+              Turning raw operational data and abstract product ideas into resilient, human-centered digital solutions.
+            </h3>
+
+            {/* CURRENT FOCUS CHIP BOX */}
+            <div className="bg-[#171717] border border-[#27272A] rounded-md p-4 flex items-center gap-3">
+              <div className="bg-[#10B981]/10 border border-[#10B981]/30 text-[#10B981] px-2 py-1 rounded font-mono text-xs flex items-center justify-center">
+                &gt;_
+              </div>
+              <span className="font-mono text-xs text-[#A1A1AA]">
+                <strong className="text-[#F5F5F5] font-normal">Current Focus:</strong> Web Development &amp; Artificial Intelligence Ecosystem
+              </span>
+            </div>
           </motion.div>
 
-          {/* RIGHT: DETAILS & METADATA CARD */}
+          {/* RIGHT COLUMN: DETAILED BIO PARAGRAPHS */}
           <motion.div
-            className="md:col-span-6 space-y-6"
+            className="md:col-span-7 space-y-4 text-sm sm:text-base text-[#A1A1AA] leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
           >
-            <p className="text-[#A1A1AA] text-base leading-relaxed">
-              Saya adalah mahasiswa Teknik Informatika Universitas Lampung yang berdedikasi tinggi dalam mengeksplorasi ekosistem web modern dan AI. Pengalaman saya mencakup kepemimpinan di laboratorium riset, analisa tren data finansial, hingga pengembangan sistem machine learning untuk visi komputer (computer vision) dan NLP.
+            <p>
+              Saya adalah pengembang perangkat lunak dan analitis data berbasis latar belakang akademis Teknik Informatika Universitas Lampung. Pengalaman saya memadukan disiplin rekayasa web dengan analisis data yang kuat untuk menjembatani sistem backend, pemrosesan data, dan antarmuka pengguna yang responsif.
             </p>
 
-            {/* METADATA CONTAINER */}
-            <div className="bg-[#171717] border border-[#27272A] rounded-lg p-5 space-y-4 font-mono text-xs">
-              <div className="flex items-center justify-between border-b border-[#27272A] pb-2">
-                <span className="text-[#71717A]">PENDIDIKAN</span>
-                <span className="text-[#F5F5F5] font-medium">S1 Teknik Informatika — Unila</span>
-              </div>
+            <p>
+              Baik dalam membangun aplikasi web interaktif, merancang alur pemrosesan data analitik, maupun mengimplementasikan model machine learning untuk visi komputer (YOLO/Mediapipe) dan NLP, saya sangat menghargai desain modular, performa terukur, serta kejelasan teknis di atas kerumitan yang berlebihan.
+            </p>
 
-              <div className="flex items-center justify-between border-b border-[#27272A] pb-2">
-                <span className="text-[#71717A]">FOKUS UTAMA</span>
-                <span className="text-[#10B981]">Web Dev, ML &amp; Data Analytics</span>
-              </div>
+            <p>
+              Di luar proyek utama, saya aktif mengkoordinasikan kegiatan Laboratorium Teknik Komputer Unila, memandu praktikum mahasiswa, serta bereksperimen dengan teknologi open-source dan otomasi alur kerja digital.
+            </p>
+          </motion.div>
 
-              <div className="flex items-center justify-between border-b border-[#27272A] pb-2">
-                <span className="text-[#71717A]">DOMISILI</span>
-                <span className="text-[#F5F5F5]">Lampung, Indonesia</span>
-              </div>
+        </div>
 
-              <div className="flex items-center justify-between">
-                <span className="text-[#71717A]">STATUS AKADEMIK</span>
-                <span className="text-[#F5F5F5]">Aktif (2022 – Sekarang)</span>
+        {/* BOTTOM METADATA GRID (4 CARDS) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          {/* CARD 1: EDUCATION */}
+          <motion.div
+            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
+            <div>
+              <div className="text-[#10B981] mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                </svg>
+              </div>
+              <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
+                EDUCATION
+              </div>
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+                S1 Teknik Informatika
+              </div>
+              <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
+                Universitas Lampung
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CARD 2: LOCATION */}
+          <motion.div
+            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+          >
+            <div>
+              <div className="text-[#10B981] mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
+                LOCATION
+              </div>
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+                Lampung, Indonesia /
+              </div>
+              <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
+                UTC+7 (WIB)
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CARD 3: CORE DISCIPLINE */}
+          <motion.div
+            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+          >
+            <div>
+              <div className="text-[#10B981] mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                </svg>
+              </div>
+              <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
+                CORE DISCIPLINE
+              </div>
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+                Full-Stack Dev &amp; Data Systems
+              </div>
+              <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
+                Web &amp; Machine Learning
+              </div>
+            </div>
+          </motion.div>
+
+          {/* CARD 4: CURRENT STATUS */}
+          <motion.div
+            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <div>
+              <div className="text-[#10B981] mb-4">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
+                CURRENT STATUS
+              </div>
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+                Lab Coordinator &amp; Student
+              </div>
+              <div className="text-xs text-[#10B981] mt-1 font-mono">
+                Available for Projects
               </div>
             </div>
           </motion.div>
 
         </div>
+
       </div>
     </section>
   );
