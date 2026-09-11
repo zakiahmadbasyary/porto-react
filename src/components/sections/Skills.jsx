@@ -3,79 +3,62 @@ import { skills } from "../../data/skills";
 
 export default function Skills() {
   return (
-    <motion.section
-      id="skills"
-      className="py-20 bg-white"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="skills" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+      <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
-        {/* TITLE */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold text-gray-800">
-            Keahlian & Kemampuan
-          </h2>
-          <p className="text-gray-500 mt-2">
-            Berikut adalah teknologi dan perangkat yang saya kuasai.
-          </p>
-        </motion.div>
+        {/* SECTION LABEL */}
+        <div className="font-mono text-xs text-[#10B981] tracking-widest uppercase mb-3">
+          03 / SKILLS
+        </div>
 
-        {/* GRID */}
-        <div className="grid md:grid-cols-2 gap-10 mt-10">
-          
-          {skills.map((category, index) => (
+        {/* SECTION HEADING */}
+        <div className="mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight">
+            Keahlian &amp; Perkakas Teknologi
+          </h2>
+          <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
+            Bahasa pemrograman, framework, pustaka data, dan perangkat lunak yang saya gunakan dalam pengembangan produk.
+          </p>
+        </div>
+
+        {/* 2-COLUMN CATEGORY GRID */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {skills.map((cat, index) => (
             <motion.div
               key={index}
-              className="bg-gray-50 p-6 rounded-xl shadow-sm"
-              initial={{ opacity: 0, y: 40 }}
+              className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-6 transition-colors"
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: false }}
-              transition={{ delay: index * 0.2 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.15, duration: 0.5 }}
             >
-              
-              <h3 className="font-semibold text-gray-700 mb-6">
-                {category.category}
-              </h3>
+              {/* CATEGORY HEADER */}
+              <div className="flex items-center gap-2 mb-6 pb-3 border-b border-[#27272A]">
+                <span className="font-mono text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">
+                  {`cat_0${index + 1}`}
+                </span>
+                <h3 className="font-medium text-[#F5F5F5] text-base">
+                  {cat.category}
+                </h3>
+              </div>
 
-              <div className="space-y-5">
-                
-                {category.items.map((skill, i) => (
-                  <div key={i}>
-                    
-                    {/* NAME + PERCENT */}
-                    <div className="flex justify-between text-sm mb-1">
-                      <span className="text-gray-600">{skill.name}</span>
-                      <span className="text-gray-400">{skill.level}%</span>
-                    </div>
-
-                    {/* PROGRESS BAR (ANIMATED) */}
-                    <div className="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-2 bg-blue-600 rounded-full"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: false }}
-                        transition={{ duration: 0.8, delay: i * 0.1 }}
-                      />
-                    </div>
-
+              {/* SKILL TECH BADGES (Replacing arbitrary percentage bars) */}
+              <div className="flex flex-wrap gap-2.5">
+                {cat.items.map((skill, i) => (
+                  <div
+                    key={i}
+                    className="font-mono text-xs text-[#A1A1AA] hover:text-[#F5F5F5] bg-[#111111] hover:bg-[#1F1F23] border border-[#27272A] hover:border-[#10B981]/40 px-3 py-1.5 rounded transition-all flex items-center gap-1.5"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]/60" />
+                    <span>{skill.name}</span>
                   </div>
                 ))}
-
               </div>
             </motion.div>
           ))}
-
         </div>
+
       </div>
-    </motion.section>
+    </section>
   );
 }

@@ -1,5 +1,63 @@
 @import "tailwindcss";
 
+:root {
+  --font-sans: "Geist", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-canvas: #0A0A0A;
+  --color-subsurface: #111111;
+  --color-card: #171717;
+  --color-card-hover: #1F1F23;
+  --color-border-subtle: #27272A;
+  --color-border-hover: #3F3F46;
+  
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #A1A1AA;
+  --color-text-muted: #71717A;
+  --color-emerald-accent: #10B981;
+}
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  
+  --color-canvas: var(--color-canvas);
+  --color-subsurface: var(--color-subsurface);
+  --color-card: var(--color-card);
+  --color-card-hover: var(--color-card-hover);
+  --color-border-subtle: var(--color-border-subtle);
+  --color-border-hover: var(--color-border-hover);
+  
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-emerald-accent: var(--color-emerald-accent);
+}
+
 html {
   scroll-behavior: smooth;
+  color-scheme: dark;
+  background-color: #0A0A0A;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0A0A0A;
+  color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3F3F46;
 }

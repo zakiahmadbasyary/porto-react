@@ -1,54 +1,59 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 py-10 mt-10">
-      <div className="max-w-6xl mx-auto px-6">
+    <footer className="bg-[#0A0A0A] border-t border-[#27272A] py-12 text-[#71717A] font-mono text-xs">
+      <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
-        {/* TOP */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
           
           {/* BRAND */}
           <div>
-            <h2 className="text-xl font-bold text-blue-600">
-              Portfolio.
-            </h2>
-            <p className="text-gray-500 text-sm mt-2">
-              Dibuat dengan React & Tailwind CSS
+            <div className="text-[#F5F5F5] font-semibold text-sm tracking-tight flex items-center gap-2">
+              <span className="text-[#10B981] bg-[#10B981]/10 px-1.5 py-0.5 rounded border border-[#10B981]/20">
+                ZAKI
+              </span>
+              <span>ZAKI AHMAD BASYARY</span>
+            </div>
+            <p className="text-[#71717A] mt-1.5 text-xs font-sans">
+              Software Developer &amp; Data Analyst — Built with React &amp; Tailwind CSS
             </p>
           </div>
 
-          {/* SOCIAL */}
-          <div className="flex gap-6 text-gray-600 text-sm">
-            
+          {/* SOCIAL LINKS */}
+          <div className="flex flex-wrap gap-6 text-xs text-[#A1A1AA]">
             <a
               href="https://github.com/zakiahmadbasyary"
               target="_blank"
-              className="hover:text-blue-600"
+              rel="noopener noreferrer"
+              className="hover:text-[#10B981] transition-colors"
             >
-              GitHub
+              GitHub ↗
             </a>
-
             <a
               href="https://linkedin.com/in/zaki-ahmad-basyary"
               target="_blank"
-              className="hover:text-blue-600"
+              rel="noopener noreferrer"
+              className="hover:text-[#10B981] transition-colors"
             >
-              LinkedIn
+              LinkedIn ↗
             </a>
-
             <a
               href="mailto:zakiahmadbasyary@gmail.com"
-              className="hover:text-blue-600"
+              className="hover:text-[#10B981] transition-colors"
             >
-              Email
+              Email ↗
             </a>
-
           </div>
 
         </div>
 
-        {/* LINE */}
-        <div className="border-t mt-8 pt-6 text-center text-gray-400 text-sm">
-          © {new Date().getFullYear()} Zaki Portfolio. All rights reserved.
+        {/* COPYRIGHT */}
+        <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+          <div>
+            © {new Date().getFullYear()} Zaki Ahmad Basyary. All rights reserved.
+          </div>
+          <div className="text-[#71717A]">
+            TERMINAL EDITORIAL SYSTEM v2.0
+          </div>
         </div>
 
       </div>

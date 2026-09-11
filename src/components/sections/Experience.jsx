@@ -4,109 +4,115 @@ import { educations } from "../../data/education";
 
 export default function Experience() {
   return (
-    <motion.section
-      id="experience"
-      className="py-20 bg-gray-50"
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="experience" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+      <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
-        {/* TITLE */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: false }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2 className="text-3xl font-bold text-gray-800">
-            Jejak Karir & Akademik
+        {/* SECTION LABEL */}
+        <div className="font-mono text-xs text-[#10B981] tracking-widest uppercase mb-3">
+          02 / EXPERIENCE
+        </div>
+
+        {/* SECTION HEADING */}
+        <div className="mb-12">
+          <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight">
+            Pengalaman Kerja &amp; Pendidikan
           </h2>
-          <p className="text-gray-500 mt-2">
-            Perjalanan profesional dan latar belakang pendidikan saya yang
-            membentuk keterampilan saya saat ini.
+          <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
+            Jejak rekam profesional dan latar belakang akademis dalam bidang teknologi dan analitik data.
           </p>
-        </motion.div>
+        </div>
 
-        {/* GRID */}
-        <div className="grid md:grid-cols-2 gap-10 mt-10">
-
-          {/* 🔵 EXPERIENCE */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
-          >
-            <h3 className="text-lg font-semibold text-gray-700 mb-6 flex items-center gap-2">
-              💼 Pengalaman Kerja
+        {/* 2-COLUMN TIMELINE GRID */}
+        <div className="grid md:grid-cols-12 gap-10 md:gap-12">
+          
+          {/* WORK EXPERIENCE (7 cols on desktop) */}
+          <div className="md:col-span-7 space-y-6">
+            <h3 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F5] flex items-center gap-2 mb-6">
+              <span className="text-[#10B981]">&gt;</span> PENGALAMAN KERJA &amp; MAGANG
             </h3>
 
-            <div className="space-y-6 border-l-2 border-blue-200 pl-6 relative">
+            <div className="relative border-l border-[#27272A] pl-6 space-y-8 ml-2">
               {experiences.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="relative"
-                  initial={{ opacity: 0, y: 40 }}
+                  className="relative group"
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
                 >
+                  {/* TIMELINE PULSE CIRCLE */}
                   <span
-                    className={`w-3 h-3 rounded-full absolute -left-[31px] top-2 ${
-                      item.active ? "bg-blue-600" : "bg-gray-400"
+                    className={`absolute -left-[31px] top-1.5 w-2.5 h-2.5 rounded-full border ${
+                      item.active
+                        ? "bg-[#10B981] border-[#10B981] shadow-[0_0_8px_rgba(16,185,129,0.5)]"
+                        : "bg-[#171717] border-[#27272A] group-hover:border-[#10B981]"
                     }`}
-                  ></span>
+                  />
 
-                  <h4 className="font-semibold text-gray-800">{item.role}</h4>
-                  <p className="text-sm text-blue-600">
-                    {item.company} ({item.period})
-                  </p>
-                  <p className="text-gray-500 text-sm mt-2">
-                    {item.description}
-                  </p>
+                  {/* EXPERIENCE CARD */}
+                  <div className="bg-[#171717] border border-[#27272A] group-hover:border-[#3F3F46] rounded-md p-5 transition-colors">
+                    <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
+                      <h4 className="font-medium text-[#F5F5F5] text-base">
+                        {item.role}
+                      </h4>
+                      <span className="font-mono text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">
+                        {item.period}
+                      </span>
+                    </div>
+
+                    <div className="font-mono text-xs text-[#A1A1AA] mb-3">
+                      {item.company}
+                    </div>
+
+                    <p className="text-xs text-[#A1A1AA] leading-relaxed">
+                      {item.description}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
-          {/* 🟢 EDUCATION */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.6 }}
-          >
-            <h3 className="text-lg font-semibold text-gray-700 mb-6 flex items-center gap-2">
-              🎓 Riwayat Pendidikan
+          {/* EDUCATION (5 cols on desktop) */}
+          <div className="md:col-span-5 space-y-6">
+            <h3 className="font-mono text-xs uppercase tracking-wider text-[#F5F5F5] flex items-center gap-2 mb-6">
+              <span className="text-[#10B981]">&gt;</span> RIWAYAT PENDIDIKAN
             </h3>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               {educations.map((item, index) => (
                 <motion.div
                   key={index}
-                  className="bg-white p-6 rounded-xl shadow"
-                  initial={{ opacity: 0, y: 40 }}
+                  className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors"
+                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: false }}
-                  transition={{ delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
                 >
-                  <h4 className="font-semibold text-gray-800">{item.title}</h4>
-                  <p className="text-green-600 text-sm">
-                    {item.institution} ({item.period})
-                  </p>
-                  <p className="text-gray-500 text-sm mt-2">
+                  <div className="flex items-center justify-between gap-2 mb-1">
+                    <h4 className="font-medium text-[#F5F5F5] text-sm">
+                      {item.title}
+                    </h4>
+                    <span className="font-mono text-[11px] text-[#71717A]">
+                      {item.period}
+                    </span>
+                  </div>
+
+                  <div className="font-mono text-xs text-[#10B981] mb-2">
+                    {item.institution}
+                  </div>
+
+                  <p className="text-xs text-[#A1A1AA] leading-relaxed">
                     {item.description}
                   </p>
                 </motion.div>
               ))}
             </div>
-          </motion.div>
+          </div>
 
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }
