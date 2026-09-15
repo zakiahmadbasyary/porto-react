@@ -1,5 +1,11 @@
 export const certificates = [
   {
+    title: "Software Development Field - Programmer Competence",
+    issuer: "BNSP Certification",
+    year: "2026",
+    link: "https://drive.google.com/file/d/1_pmF-5QLL60K5Wz-DdE4gzT_XYtJbqBr/view?usp=sharing",
+  },
+  {
     title: "Mastery Deep Learning",
     issuer: "Digital Talent Scholarship",
     year: "2025",
@@ -54,7 +60,7 @@ export const certificates = [
     link: "https://drive.google.com/file/d/1xyKdsrmRjP_ZP5wnEviI1KVGax5Pf2v_/view?usp=sharing",
   },
   {
-    title: "Juara 1 KSN K Matematika Kabupaten Lampung Selatan ",
+    title: "1st Place, South Lampung Regency KSN-K Mathematics Competition",
     issuer: "Pusat Prestasi Nasional",
     year: "2021",
     link: "https://drive.google.com/file/d/12hLnooeP-tNao3XioydrC2BCTQRS1wfJ/view?usp=sharing",

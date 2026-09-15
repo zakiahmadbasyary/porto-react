@@ -17,7 +17,7 @@ export default function Experience() {
             Work Experience
           </h2>
           <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
-            Jejak rekam profesional dan pengalaman kerja dalam bidang teknologi dan analitik data.
+            Professional track record and work experience in the fields of technology and data analytics.
           </p>
         </div>
 
@@ -53,14 +53,24 @@ export default function Experience() {
                     </span>
                   </div>
 
-                  <div className="font-mono text-xs text-[#A1A1AA] mb-4 flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#10B981]/60" />
+                  <div className="font-mono text-xs text-[#E4E4E7] font-semibold mb-4 flex items-center gap-2">
                     <span>{item.company}</span>
                   </div>
 
-                  <p className="text-sm text-[#A1A1AA] leading-relaxed">
-                    {item.description}
-                  </p>
+                  {Array.isArray(item.description) ? (
+                    <ul className="space-y-2 text-sm text-[#A1A1AA]">
+                      {item.description.map((point, i) => (
+                        <li key={i} className="flex items-start gap-2.5 leading-relaxed">
+                          <span className="w-1.5 h-1.5 rounded-full bg-[#10B981] mt-2 shrink-0" />
+                          <span>{point}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-sm text-[#A1A1AA] leading-relaxed">
+                      {item.description}
+                    </p>
+                  )}
                 </div>
               </motion.div>
             ))}

@@ -1,7 +1,7 @@
-import isyarat from "../assets/proyek/isyarat.png";
+import isyarat from "../assets/proyek/SLR.png";
 import resto from "../assets/proyek/resto.png";
 import analisa from "../assets/proyek/analisa.png";
-import djpb from "../assets/proyek/djpb.jpg";
+import djpb from "../assets/proyek/djpb.png";
 import desa from "../assets/proyek/desa.png";
 import sipedas from "../assets/proyek/sipedas.png";
 import sentiment from "../assets/proyek/sentiment.png";
@@ -10,75 +10,111 @@ import ar from "../assets/proyek/ar.png";
 
 export const projects = [
   {
-    title: "Sistem Penerjamah Bahasa Isyarat SIBI ",
+    id: "isyarat",
+    title: "SIBI Sign Language Translator System",
     description:
-      "Proyek skripsi untuk membantu tunarungu berkomunikasi dan berlatih gerakan bahasa isyarat SIBI dengan mengimplementasikan model YOLO11 dengan mediapipe untuk membuat sistem penerjemah bahasa isyarat SIBI",
+      "Undergraduate thesis project to assist deaf individuals in communicating and practicing SIBI sign language gestures by implementing YOLO11 and MediaPipe computer vision models.",
     image: isyarat,
     tech: ["Python", "YOLO11", "Mediapipe"],
     github: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
     demo: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
+    defaultFeatured: true,
+    category: "AI & ML",
   },
   {
-    title: "Website Sederhana Reservasi Restoran",
+    id: "fintrack",
+    title: "FinTrack - Aplikasi Pencatat Keuangan Sederhana",
     description:
-      "Proyek Resto adalah aplikasi pemesanan restoran sederhana berbasis web menggunakan Python Flask dan MySQL. Aplikasi ini menyediakan fitur pemesanan oleh pengguna, serta dashboard bagi admin untuk mengelola meja, pesanan, dan memonitor aktivitas restoran.",
+      "A simple financial tracking application that uses a spreadsheet as a database, featuring a simple interface and customizable categories.",
+    image: fintrack,
+    tech: ["Next.js", "Spreadsheet", "appsheet"],
+    github: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
+    demo: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
+    defaultFeatured: true,
+    category: "AI & ML",
+  },
+  {
+    id: "resto",
+    title: "Restaurant Reservation Web Application",
+    description:
+      "A web-based restaurant booking application built with Python Flask and MySQL. Features user reservation workflows and an admin dashboard for managing tables, orders, and restaurant analytics.",
     image: resto,
-    tech: ["html", "bootstrap", "python", "flask", "mysql"],
+    tech: ["HTML", "Bootstrap", "Python", "Flask", "MySQL"],
     github: "https://github.com/zakiahmadbasyary/ProyekResto",
     demo: "https://github.com/zakiahmadbasyary/ProyekResto",
+    defaultFeatured: true,
+    category: "Web Dev",
   },
   {
-    title: "Data Analyst : Analisa & Visualisasi Trend",
+    id: "analisa",
+    title: "Data Analytics: Trend Analysis & Visualization",
     description:
-      "Kumpulan analisis tren berbasis data.  Analisis dilakukan dengan pendekatan Data Analytics mulai dari eksplorasi data, visualisasi, hingga penarikan insight penting terkait perkembangan sosial dan ekonomi di Indonesia.",
+      "A collection of data-driven trend analyses. Conducted exploratory data analysis, data visualization, and key insight extractions regarding socio-economic developments in Indonesia.",
     image: analisa,
-    tech: ["python", "pandas", "matplotlib", "seaborn"],
+    tech: ["Python", "Pandas", "Matplotlib", "Seaborn"],
     github: "https://github.com/zakiahmadbasyary/DataAnalyst-Analisa_Trend",
     demo: "https://github.com/zakiahmadbasyary/DataAnalyst-Analisa_Trend",
+    defaultFeatured: true,
+    category: "Data Analytics",
   },
   {
-    title: "Dashboard Indikator Ekonomi Makro Provinsi Lampung",
+    id: "djpb",
+    title: "Lampung Province Macroeconomic Dashboard",
     description:
-      "Dashboard ini dirancang untuk menyajikan data penting seperti pertumbuhan ekonomi, inflasi, kemiskinan, pengangguran, dan indikator lainnya dalam bentuk visual yang interaktif dan mudah dipahami. Tujuannya adalah membantu pengambil kebijakan, stakeholder, maupun masyarakat dalam memahami kondisi ekonomi daerah secara lebih cepat dan informatif. Dashboard ini dibuat dalam studi kasus Kanwil DJPb Provinsi Lampung",
+      "An interactive dashboard designed to present critical macroeconomic indicators such as economic growth, inflation, poverty rate, and unemployment for DJPb Regional Office Lampung Province.",
     image: djpb,
-    tech: ["tableau", "data visualization", "excel"],
+    tech: ["Tableau", "Data Visualization", "Excel"],
     github: "-",
     demo: "-",
+    defaultFeatured: true,
+    category: "Data Analytics",
   },
   {
-    title: "Projek Pembuatan Website Desa Belambangan Lampung Selatan",
+    id: "desa",
+    title: "Belambangan Village Official Website",
     description:
-      "Website ini dirancang untuk menyajikan informasi penting tentang desa Belambangan, termasuk berita terkini, kegiatan, dan layanan yang tersedia. Tujuannya adalah untuk memperkuat komunikasi antara pemerintah desa dan masyarakat serta meningkatkan partisipasi warga dalam pembangunan desa.",
+      "Designed and developed an official web portal for Belambangan Village, presenting village news, public services, and community events to enhance communication between local government and residents.",
     image: desa,
-    tech: ["html", "bootstrap", "javascript"],
+    tech: ["HTML", "Bootstrap", "JavaScript"],
     github: "https://github.com/zakiahmadbasyary/Web_Desa_Belambangan",
     demo: "https://belambangan-web.vercel.app/",
+    defaultFeatured: false,
+    category: "Web Dev",
   },
   {
-    title: "Website Sistem Pakar Penyakit Tanaman Cabai Dengan Teorema Bayes",
+    id: "sipedas",
+    title: "Chili Plant Disease Expert System (Bayesian Theorem)",
     description:
-      "Pembuatan website sistem pakar untuk mendeteksi penyakit pada tanaman cabai dengan menerapkan algoritma teorema bayes",
+      "Web-based expert system application for detecting and diagnosing chili plant diseases using Bayesian Theorem probability algorithms.",
     image: sipedas,
-    tech: ["html", "bootstrap", "javascript"],
+    tech: ["HTML", "Bootstrap", "JavaScript"],
     github: "https://github.com/zakiahmadbasyary/Sistem-Pakar-Penyakit-Cabai",
     demo: "https://sistem-pakar-penyakit-cabai.vercel.app/",
+    defaultFeatured: false,
+    category: "Web Dev",
   },
   {
-    title: "Sentiment Analysis Tentang IKN tweet tanyarlfes",
+    id: "sentiment",
+    title: "IKN Sentiment Analysis (Twitter/X Data)",
     description:
-      "capstone project pada studi independen di MIKTI dengan melakukan sentiment analysis IKN pada tweet akun tanyarlfes",
+      "Capstone project evaluating public sentiment regarding Indonesia's new capital city (IKN) based on Twitter dataset analysis using NLP techniques and Streamlit interactive UI.",
     image: sentiment,
-    tech: ["python", "pandas", "NLP", "streamlit"],
+    tech: ["Python", "Pandas", "NLP", "Streamlit"],
     github: "https://github.com/zakiahmadbasyary/Capstone_Mikti",
     demo: "https://capstonemikti-u83cyzv4n3afgmzegz8g9q.streamlit.app/",
+    defaultFeatured: false,
+    category: "AI & ML",
   },
   {
-    title: "Aplikasi Sembahyang : Media Interaktif Pembelajaran Sholat Berbasis AR",
+    id: "ar",
+    title: "Sembahyang App: AR Interactive Prayer Learning",
     description:
-      "Aplikasi “Sembahyang” merupakan aplikasi berbasis Augmented Reality (AR) yang  dikembangkan untuk membantu proses pembelajaran gerakan dan bacaan sholat secara interaktif. ",
+      "An Augmented Reality (AR) mobile application developed using Unity and C# to teach prayer movements and recitations through interactive 3D visualizations.",
     image: ar,
     tech: ["Unity", "C#", "AR Foundation"],
     github: "https://github.com/zakiahmadbasyary/Aplikasi-AR-Sembahyang",
     demo: "https://drive.google.com/drive/folders/1y8DftJLi0xjOprZ1eWMwo8D8AGWc7thT",
+    defaultFeatured: false,
+    category: "AR & Mobile",
   },
 ];

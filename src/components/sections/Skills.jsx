@@ -14,10 +14,10 @@ export default function Skills() {
         {/* SECTION HEADING */}
         <div className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight">
-            Keahlian &amp;  Teknologi
+            Skills &amp;  Tech Stack
           </h2>
           <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
-            Bahasa pemrograman, framework, pustaka data, dan perangkat lunak yang saya gunakan dalam pengembangan produk.
+            Programming languages, frameworks, data libraries, and software I use in product development.
           </p>
         </div>
 
@@ -34,9 +34,6 @@ export default function Skills() {
             >
               {/* CATEGORY HEADER */}
               <div className="flex items-center gap-2 mb-6 pb-3 border-b border-[#27272A]">
-                <span className="font-mono text-xs text-[#10B981] bg-[#10B981]/10 px-2 py-0.5 rounded border border-[#10B981]/20">
-                  {`cat_0${index + 1}`}
-                </span>
                 <h3 className="font-medium text-[#F5F5F5] text-base">
                   {cat.category}
                 </h3>

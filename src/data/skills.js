@@ -1,16 +1,19 @@
 export const skills = [
   {
-    category: "Web Development",
+    category: "Web & Android Development",
     items: [
       { name: "HTML & CSS", level: 90 },
-      { name: "JavaScript", level: 80 },
-      { name: "React.js", level: 70 },
+      { name: "JavaScript", level: 85 },
+      { name: "TypeScript", level: 80 },
+      { name: "React.js", level: 80 },
+      { name: "Next.js", level: 80 },
       { name: "Bootstrap & Tailwind CSS", level: 70 },
       { name: "PHP", level: 65 },
       { name: "Flask", level: 75 },
       { name: "Figma / UI Design", level: 85 },
-      { name: "PostgreSQL / MySQL", level: 70 },
-      { name: "Git & GitHub", level: 80 },
+      { name: "PostgreSQL", level: 80 },
+      { name: "MySQL", level: 80 },
+      { name: "Git & GitHub", level: 90 },
     ],
   },
   {

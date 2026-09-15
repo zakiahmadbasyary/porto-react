@@ -14,10 +14,10 @@ export default function Certificates() {
         {/* SECTION HEADING */}
         <div className="mb-12">
           <h2 className="text-2xl md:text-3xl font-semibold text-[#F5F5F5] tracking-tight">
-            Sertifikasi &amp; Kredensial
+            Certifications &amp; Credentials
           </h2>
           <p className="text-[#A1A1AA] text-sm mt-2 max-w-xl">
-            Bukti kompetensi resmi dan kelulusan program pelatihan profesional yang telah diselesaikan.
+            Proof of official competence and completion of a professional training program.
           </p>
         </div>
 
