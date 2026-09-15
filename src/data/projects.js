@@ -1,4 +1,5 @@
 import isyarat from "../assets/proyek/SLR.png";
+import fintrack from "../assets/proyek/fintrack.png";
 import resto from "../assets/proyek/resto.png";
 import analisa from "../assets/proyek/analisa.png";
 import djpb from "../assets/proyek/djpb.png";
