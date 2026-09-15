@@ -3,7 +3,7 @@ import { skills } from "../../data/skills";
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="skills" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
 
         {/* SECTION LABEL */}
@@ -26,14 +26,15 @@ export default function Skills() {
           {skills.map((cat, index) => (
             <motion.div
               key={index}
-              className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-6 transition-colors"
+              className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-6 transition-all shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -4 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.15, duration: 0.5 }}
+              transition={{ delay: index * 0.12, duration: 0.5 }}
             >
               {/* CATEGORY HEADER */}
-              <div className="flex items-center gap-2 mb-6 pb-3 border-b border-[#27272A]">
+              <div className="flex items-center gap-2 mb-6 pb-3 border-b border-[#1e293b]">
                 <h3 className="font-medium text-[#F5F5F5] text-base">
                   {cat.category}
                 </h3>

@@ -28,7 +28,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="pt-28 md:pt-36 pb-16 md:pb-24 bg-[#0A0A0A] text-[#F5F5F5] relative overflow-hidden"
+      className="pt-28 md:pt-36 pb-16 md:pb-24 bg-transparent text-[#F5F5F5] relative overflow-hidden"
     >
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         

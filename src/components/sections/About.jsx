@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="about" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
         {/* HEADER ROW */}
@@ -73,15 +73,16 @@ export default function About() {
           
           {/* CARD 1: EDUCATION */}
           <motion.div
-            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
-            initial={{ opacity: 0, y: 15 }}
+            className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-5 transition-all shadow-lg flex flex-col justify-between group"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
+            transition={{ delay: 0.1, duration: 0.4 }}
           >
             <div>
               <div className="text-[#10B981] mb-4">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 01-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
                 </svg>
@@ -89,7 +90,7 @@ export default function About() {
               <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
                 EDUCATION
               </div>
-              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug group-hover:text-[#38bdf8] transition-colors">
                 S1 Teknik Informatika
               </div>
               <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
@@ -100,15 +101,16 @@ export default function About() {
 
           {/* CARD 2: LOCATION */}
           <motion.div
-            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
-            initial={{ opacity: 0, y: 15 }}
+            className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-5 transition-all shadow-lg flex flex-col justify-between group"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
+            transition={{ delay: 0.2, duration: 0.4 }}
           >
             <div>
               <div className="text-[#10B981] mb-4">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -116,7 +118,7 @@ export default function About() {
               <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
                 LOCATION
               </div>
-              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug group-hover:text-[#38bdf8] transition-colors">
                 Lampung, Indonesia /
               </div>
               <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
@@ -127,22 +129,23 @@ export default function About() {
 
           {/* CARD 3: CORE DISCIPLINE */}
           <motion.div
-            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
-            initial={{ opacity: 0, y: 15 }}
+            className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-5 transition-all shadow-lg flex flex-col justify-between group"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
+            transition={{ delay: 0.3, duration: 0.4 }}
           >
             <div>
               <div className="text-[#10B981] mb-4">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                 </svg>
               </div>
               <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
                 CORE DISCIPLINE
               </div>
-              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug group-hover:text-[#38bdf8] transition-colors">
                 Full-Stack Dev &amp; Data Systems
               </div>
               <div className="text-xs text-[#A1A1AA] mt-1 font-mono">
@@ -153,22 +156,23 @@ export default function About() {
 
           {/* CARD 4: CURRENT STATUS */}
           <motion.div
-            className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-colors flex flex-col justify-between"
-            initial={{ opacity: 0, y: 15 }}
+            className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-5 transition-all shadow-lg flex flex-col justify-between group"
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            whileHover={{ y: -5 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
           >
             <div>
               <div className="text-[#10B981] mb-4">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
               <div className="font-mono text-[11px] text-[#71717A] uppercase tracking-wider mb-1">
                 CURRENT STATUS
               </div>
-              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug">
+              <div className="font-semibold text-sm text-[#F5F5F5] leading-snug group-hover:text-[#38bdf8] transition-colors">
                 System Intern in GGP &amp; Freelance
               </div>
               <div className="text-xs text-[#10B981] mt-1 font-mono">

@@ -3,7 +3,7 @@ import { experiences } from "../../data/experience";
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="experience" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
         {/* SECTION LABEL */}
@@ -43,9 +43,9 @@ export default function Experience() {
                 />
 
                 {/* EXPERIENCE CARD */}
-                <div className="bg-[#171717] border border-[#27272A] group-hover:border-[#3F3F46] rounded-md p-6 transition-colors">
+                <div className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] group-hover:border-[#0284c7]/60 rounded-lg p-6 transition-all duration-300 group-hover:-translate-y-1 shadow-lg">
                   <div className="flex flex-wrap items-center justify-between gap-3 mb-2">
-                    <h3 className="font-semibold text-[#F5F5F5] text-lg group-hover:text-[#10B981] transition-colors">
+                    <h3 className="font-semibold text-[#F5F5F5] text-lg group-hover:text-[#38bdf8] transition-colors">
                       {item.role}
                     </h3>
                     <span className="font-mono text-xs text-[#10B981] bg-[#10B981]/10 px-2.5 py-1 rounded border border-[#10B981]/20">

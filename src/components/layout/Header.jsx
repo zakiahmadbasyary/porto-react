@@ -43,7 +43,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-[#0A0A0A]/80 backdrop-blur-md border-b border-[#27272A] transition-all">
+    <header className="fixed top-0 left-0 w-full z-50 bg-[#030712]/80 backdrop-blur-md border-b border-[#1e293b]/70 transition-all">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         
         {/* BRAND / LOGO */}
@@ -123,7 +123,7 @@ export default function Header() {
 
       {/* MOBILE NAV DROPDOWN */}
       {open && (
-        <div className="md:hidden bg-[#0A0A0A] border-b border-[#27272A] px-5 py-4 space-y-3 font-mono text-xs uppercase tracking-wider">
+        <div className="md:hidden bg-[#030712]/95 backdrop-blur-lg border-b border-[#1e293b]/70 px-5 py-4 space-y-3 font-mono text-xs uppercase tracking-wider">
           {navItems.map((item) => (
             <a
               key={item.id}

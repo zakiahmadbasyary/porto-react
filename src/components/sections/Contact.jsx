@@ -13,7 +13,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="contact" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
         {/* SECTION LABEL */}
@@ -26,9 +26,9 @@ export default function Contact() {
           
           {/* LEFT COLUMN: CONTACT INFORMATION BOX (7 cols) */}
           <motion.div
-            className="md:col-span-7 bg-[#171717] border border-[#27272A] rounded-lg p-6 sm:p-8 space-y-6 relative overflow-hidden"
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            className="md:col-span-7 bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/50 rounded-xl p-6 sm:p-8 space-y-6 relative overflow-hidden shadow-xl transition-all"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >

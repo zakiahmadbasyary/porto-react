@@ -37,14 +37,73 @@
 html {
   scroll-behavior: smooth;
   color-scheme: dark;
-  background-color: #0A0A0A;
+  background-color: #030712;
 }
 
 body {
   font-family: var(--font-sans);
-  background-color: #0A0A0A;
+  background-color: #030712;
   color: #F5F5F5;
   overflow-x: hidden;
+}
+
+/* Moving gradient blob keyframes */
+@keyframes blob1 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(140px, -90px) scale(1.15);
+  }
+  66% {
+    transform: translate(-80px, 110px) scale(0.9);
+  }
+}
+
+@keyframes blob2 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-120px, 120px) scale(0.85);
+  }
+  66% {
+    transform: translate(100px, -80px) scale(1.12);
+  }
+}
+
+@keyframes blob3 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  50% {
+    transform: translate(150px, -100px) scale(1.2);
+  }
+}
+
+@keyframes blob4 {
+  0%, 100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(-130px, -100px) scale(1.1);
+  }
+  66% {
+    transform: translate(90px, 90px) scale(0.95);
+  }
+}
+
+.animate-blob1 {
+  animation: blob1 20s infinite ease-in-out;
+}
+.animate-blob2 {
+  animation: blob2 25s infinite ease-in-out;
+}
+.animate-blob3 {
+  animation: blob3 22s infinite ease-in-out;
+}
+.animate-blob4 {
+  animation: blob4 28s infinite ease-in-out;
 }
 
 /* Custom scrollbar */
@@ -52,12 +111,12 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0A0A0A;
+  background: #030712;
 }
 ::-webkit-scrollbar-thumb {
-  background: #27272A;
+  background: #1e293b;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3F3F46;
+  background: #334155;
 }

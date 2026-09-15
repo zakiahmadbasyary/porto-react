@@ -7,12 +7,14 @@ import Certificates from "./components/sections/Certificates";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/layout/Footer";
+import WaterRippleBackground from "./components/layout/WaterRippleBackground";
 
 function App() {
   return (
-    <div className="bg-[#0A0A0A] text-[#F5F5F5] min-h-screen font-sans selection:bg-[#10B981]/30 selection:text-[#10B981]">
+    <div className="relative min-h-screen bg-[#020617] text-[#F5F5F5] font-sans selection:bg-[#0284c7]/30 selection:text-[#38bdf8] overflow-x-hidden">
+      <WaterRippleBackground />
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <About />
         <Experience />
@@ -20,8 +22,8 @@ function App() {
         <Certificates />
         <Projects />
         <Contact />
+        <Footer />
       </main>
-      <Footer />
     </div>
   );
 }

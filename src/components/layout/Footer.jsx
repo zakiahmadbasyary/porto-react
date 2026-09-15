@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="bg-[#0A0A0A] border-t border-[#27272A] py-12 text-[#71717A] font-mono text-xs">
+    <footer className="relative z-10 bg-transparent border-t border-[#1e293b]/60 py-12 text-[#71717A] font-mono text-xs">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
-        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#27272A]">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pb-8 border-b border-[#1e293b]/60">
           
           {/* BRAND */}
           <div>

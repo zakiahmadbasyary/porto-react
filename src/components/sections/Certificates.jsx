@@ -3,7 +3,7 @@ import { certificates } from "../../data/certificates";
 
 export default function Certificates() {
   return (
-    <section id="certificates" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="certificates" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
         {/* SECTION LABEL */}
@@ -29,9 +29,10 @@ export default function Certificates() {
               href={item.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-md p-5 transition-all flex flex-col justify-between group"
+              className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-lg p-5 transition-all flex flex-col justify-between group shadow-lg"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ y: -5 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05, duration: 0.4 }}
             >

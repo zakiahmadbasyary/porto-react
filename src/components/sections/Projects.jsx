@@ -42,7 +42,7 @@ export default function Projects() {
   );
 
   return (
-    <section id="projects" className="py-20 bg-[#0A0A0A] border-t border-[#27272A]">
+    <section id="projects" className="py-20 bg-transparent border-t border-[#1e293b]/60">
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
         
         {/* SECTION LABEL */}
@@ -115,10 +115,10 @@ export default function Projects() {
                       layout
                       key={project.id}
                       initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      exit={{ opacity: 0, scale: 0.95 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
                       transition={{ duration: 0.4 }}
-                      className="bg-[#171717] border border-[#27272A] hover:border-[#10B981]/50 rounded-xl overflow-hidden transition-all group relative"
+                      className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-xl overflow-hidden transition-all group relative shadow-xl"
                     >
                       <div className="grid md:grid-cols-12 items-center">
                         
@@ -238,10 +238,11 @@ export default function Projects() {
                     layout
                     key={project.id}
                     initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    whileHover={{ y: -5 }}
+                    viewport={{ once: true }}
                     transition={{ duration: 0.3, delay: index * 0.05 }}
-                    className="bg-[#171717] border border-[#27272A] hover:border-[#3F3F46] rounded-xl overflow-hidden transition-all flex flex-col justify-between group relative"
+                    className="bg-[#0f172a]/60 backdrop-blur-md border border-[#1e293b] hover:border-[#0284c7]/60 rounded-xl overflow-hidden transition-all flex flex-col justify-between group relative shadow-lg"
                   >
                     {/* IMAGE HEADER WITH CATEGORY BADGE & TOGGLE BUTTON */}
                     <div className="relative h-44 overflow-hidden bg-[#111111] border-b border-[#27272A]">
