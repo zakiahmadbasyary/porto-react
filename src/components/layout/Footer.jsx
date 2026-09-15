@@ -11,10 +11,10 @@ export default function Footer() {
               <span className="text-[#10B981] bg-[#10B981]/10 px-1.5 py-0.5 rounded border border-[#10B981]/20">
                 ZAKI
               </span>
-              <span>ZAKI AHMAD BASYARY</span>
+              <span>AHMAD BASYARY</span>
             </div>
             <p className="text-[#71717A] mt-1.5 text-xs font-sans">
-              Software Developer &amp; Data Analyst — Built with React &amp; Tailwind CSS
+              Web Developer &amp; Artificial Intelligence 
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Zaki Ahmad Basyary. All rights reserved.
           </div>
           <div className="text-[#71717A]">
-            TERMINAL EDITORIAL SYSTEM v2.0
+            Built with React &amp; Tailwind CSS
           </div>
         </div>
 

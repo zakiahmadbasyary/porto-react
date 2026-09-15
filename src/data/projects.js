@@ -29,10 +29,10 @@ export const projects = [
       "A simple financial tracking application that uses a spreadsheet as a database, featuring a simple interface and customizable categories.",
     image: fintrack,
     tech: ["Next.js", "Spreadsheet", "appsheet"],
-    github: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
-    demo: "https://github.com/zakiahmadbasyary/PengenalanBahasaIsyarat",
+    github: "https://github.com/zakiahmadbasyary/FinTrack",
+    demo: "https://fin-track-topaz-six.vercel.app/",
     defaultFeatured: true,
-    category: "AI & ML",
+    category: "AR & Mobile",
   },
   {
     id: "resto",

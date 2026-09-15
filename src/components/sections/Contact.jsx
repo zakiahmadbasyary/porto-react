@@ -33,11 +33,11 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#F5F5F5] tracking-tight leading-tight">
-              Mari berkolaborasi dan bangun produk berdaya guna bersama.
+              Let's collaborate and build impactful products together.
             </h2>
 
             <p className="text-[#A1A1AA] text-sm leading-relaxed">
-              Saya selalu terbuka untuk diskusi mengenai peluang karir, proyek riset AI, pembuatan web application, maupun konsultasi pengolahan data. Silakan hubungi saya melalui email atau jaringan profesional berikut.
+              I am always open to discussions regarding career opportunities, AI research projects, web application development, or data processing consulting. Please feel free to contact me via email or the professional networks listed below.
             </p>
 
             {/* ACTION BUTTONS */}
@@ -46,7 +46,7 @@ export default function Contact() {
                 href="mailto:zakiahmadbasyary@gmail.com"
                 className="bg-[#F5F5F5] text-[#0A0A0A] hover:bg-[#E5E2E1] font-medium text-xs sm:text-sm px-5 py-2.5 rounded transition-colors flex items-center gap-2"
               >
-                <span>Kirim Email</span>
+                <span>Send Email</span>
                 <span className="font-mono">→</span>
               </a>
 
@@ -103,12 +103,8 @@ export default function Contact() {
                   <div className="aspect-square overflow-hidden rounded bg-[#111111] relative">
                     <img
                       src={photo.src}
-                      alt={photo.alt}
                       className="w-full h-full object-cover filter contrast-[1.03] grayscale-[0.25] group-hover:grayscale-0 transition-all duration-300 group-hover:scale-105"
                     />
-                    <div className="absolute bottom-1 left-1 bg-[#0A0A0A]/80 border border-[#27272A] px-1.5 py-0.5 rounded font-mono text-[9px] text-[#A1A1AA]">
-                      {photo.label}
-                    </div>
                   </div>
                 </div>
               ))}
