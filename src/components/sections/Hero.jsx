@@ -31,10 +31,10 @@ export default function Hero() {
       className="pt-28 md:pt-36 pb-16 md:pb-24 bg-transparent text-[#F5F5F5] relative overflow-hidden"
     >
       <div className="max-w-[1120px] mx-auto px-5 md:px-8">
-        
+
         {/* HERO GRID */}
         <div className="grid md:grid-cols-12 gap-10 md:gap-12 items-center">
-          
+
           {/* LEFT CONTENT (7 cols on desktop) */}
           <motion.div
             className="md:col-span-7 flex flex-col items-start"
@@ -81,7 +81,7 @@ export default function Hero() {
               </a>
 
               <a
-                href="https://drive.google.com/file/d/1Pb8Ht4lQu_BTttuZtuFQjAX0Fn3JN7dR/view?usp=sharing"
+                href="https://drive.google.com/file/d/1ahDVXtyDvdO9YVQQoqtcaA_4nA7b9iK-/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#171717] text-[#F5F5F5] hover:bg-[#1F1F23] border border-[#27272A] hover:border-[#3F3F46] font-medium text-sm px-6 py-3 rounded transition-all flex items-center gap-2"
